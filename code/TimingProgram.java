@@ -18,14 +18,40 @@ public class TimingProgram {
         // TODO: REPLACE THIS CODE WITH YOUR OWN AS NEEDED
         //
         // we can measure the time to move with the methods as follows:
-        int size = 1000;
+        int size = 10000;
         int minSamples = 1; // usually want a larger value,
                             // but for this exercise,
                             // this is good enough
         double time = measureTimeToMove(minSamples, size, rng);
-
         // and we can output the results in a comma delimited format
-        System.out.printf("moveMinToFrontA,%d,%.18f\n", size, time);
+        System.out.printf("moveMinToFrontB,%d,%.18f\n", size, time);
+        size = 20000;
+        time = measureTimeToMove(minSamples, size, rng);
+        System.out.printf("moveMinToFrontB,%d,%.18f\n", size, time);  
+        size = 30000;
+        time = measureTimeToMove(minSamples, size, rng);
+        System.out.printf("moveMinToFrontB,%d,%.18f\n", size, time);
+        size = 40000;
+        time = measureTimeToMove(minSamples, size, rng);
+        System.out.printf("moveMinToFrontB,%d,%.18f\n", size, time);
+        size = 50000;
+        time = measureTimeToMove(minSamples, size, rng);
+        System.out.printf("moveMinToFrontB,%d,%.18f\n", size, time);
+        size = 60000;
+        time = measureTimeToMove(minSamples, size, rng);
+        System.out.printf("moveMinToFrontB,%d,%.18f\n", size, time);
+        size = 70000;
+        time = measureTimeToMove(minSamples, size, rng);
+        System.out.printf("moveMinToFrontB,%d,%.18f\n", size, time);
+        size = 80000;
+        time = measureTimeToMove(minSamples, size, rng);
+        System.out.printf("moveMinToFrontB,%d,%.18f\n", size, time);
+        size = 90000;
+        time = measureTimeToMove(minSamples, size, rng);
+        System.out.printf("moveMinToFrontB,%d,%.18f\n", size, time);
+        size = 100000;
+        time = measureTimeToMove(minSamples, size, rng);
+        System.out.printf("moveMinToFrontB,%d,%.18f\n", size, time);
     }
 
     /**
@@ -71,7 +97,7 @@ public class TimingProgram {
 
             watch.start();
             // TODO: Call an algorithm here that you want to time
-            MovingMethods.moveMinToFrontA(input);
+            MovingMethods.moveMinToFrontB(input);
             watch.stop();
 
             numSamples++;
